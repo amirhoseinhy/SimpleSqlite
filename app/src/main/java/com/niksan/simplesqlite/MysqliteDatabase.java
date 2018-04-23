@@ -21,7 +21,7 @@ public class MysqliteDatabase extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " ( " +
-                USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT ," +
+                USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT , " +
                 USER_NAME + " TEXT NOT NULL ) ");
     }
 
